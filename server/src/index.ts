@@ -6,13 +6,6 @@ const port = 9000;
 
 app.use(bodyParser.json());
 
-app.get("/", (_req, res) => {
-  res.send("Hello!");
-});
-
-app.get("/test", (req, res) => {
-  res.send("test");
-});
 //listing route
 app.get("/listings", (_req, res) => {
   return res.send(listings);
